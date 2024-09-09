@@ -1,0 +1,100 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #f6d365, #fda085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container styling */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Form styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], select, input[type="number"] {
+    padding: 10px;
+    border: 2px solid #fda085;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="submit"], #clearExpenses {
+    background-color: #fda085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, #clearExpenses:hover {
+    background-color: #f6d365;
+}
+
+/* Expense summary styling */
+h3 {
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #fda085;
+}
+
+th {
+    background-color: #fda085;
+    color: white;
+}
+
+td {
+    background-color: #f6d365;
+}
+
+/* Clear All button styling */
+#clearExpenses {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
